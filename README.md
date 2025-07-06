@@ -30,6 +30,8 @@ cd portfolio-landing-page
 
 # 3. Buka file index.html di browser atau jalankan dengan Live Server
 
+```
+
 ## 🤖 Dukungan AI
 Desain dan struktur proyek ini dibuat dengan bantuan AI assistant untuk menghasilkan tampilan HTML dan Tailwind CSS yang efisien. Pengguna hanya melakukan penyesuaian kecil pada hasil akhir agar sesuai dengan preferensi pribadi.
 
