@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Muhammad Hilman Fairuzi</title>
+    <link href="css/style.css" rel="stylesheet">
+    <style>
+        .name-typer {
+            display: inline-block;
+            white-space: nowrap;
+            overflow: hidden;
+            border-right: 5px solid orange;
+            width: 0ch;
+            animation: typing-name 5s steps(24, end) forwards, blink-caret 0.75s step-end infinite;
+        }
+
+        @keyframes typing-name {
+            from { width: 0ch; }
+            to { width: 22ch; } /* sesuai jumlah karakter */
+        }
+
+        @keyframes blink-caret {
+            from, to { border-color: transparent; }
+            50% { border-color: orange; }
+        }
+    </style>
+
+</head>
+<body class=" text-white bg-gray-900">
+
+    <!-- Navbar -->
+    <nav class="sticky top-0 bg-gray-800 py-5">
+        <div class="px-30 mx-auto flex justify-between items-center">
+            <div class="text-lg font-bold">Muhammad Hilman Fairuzi</div>
+            <div class="space-x-4">
+                <a href="#home">Beranda</a>
+                <a href="#about">Tentang Saya</a>
+                <a href="#certifications">Sertifikasi</a>
+                <a href="#projects">Proyek</a>
+                <!-- <a href="#contact">Kontak</a> -->
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="flex flex-col md:flex-row items-center justify-between px-30">
+        <div class="md:w-1/2 mb-10 md:mb-0">
+            <h1 class="text-4xl mb-4">Halo, saya <span class="align-bottom font-bold text-orange-500 name-typer">Muhammad Hilman Fairuzi</span></h1>
+            <h2 class="text-2xl text-gray-300">Software Developer | IoT Developer | Fullstack Developer | UI/UX Enthusiast</h2>
+            <div class="mt-10">
+                <a href="#projects" class="bg-transparent border border-orange-500 text-white font-bold px-6 py-2 rounded-lg">Lihat Portofolio</a>
+                <a href="#contact" class="ml-4 bg-orange-500 text-white font-bold px-6 py-2 rounded-lg">Hubungi Saya</a>
+            </div>
+        </div>
+        <div class="w-1/2">
+            <img src="../assets/profile.png" alt="Muhammad Hilman Fairuzi" class="rounded-full w-3/4 ml-auto">
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 px-30 bg-gray-950">
+        <h2 class="text-4xl mb-10 font-bold">
+            <span class="text-orange-500 mr-2">//</span> 
+            <span class="text-white border-b-2 border-orange-500 pb-1">Tentang Saya</span>
+        </h2>
+        <div class="flex">
+            <img src="../assets/profile.png" alt="Muhammad Hilman Fairuzi" class="rounded-full w-1/4 mr-6">
+            <div>
+                <p class="mb-6 text-base md:text-lg text-slate-300 leading-relaxed tracking-wide text-justify">
+                    <span class="float-left text-[5rem] leading-none font-bold mr-2 text-orange-500">S</span>aya adalah seorang <span class="font-semibold text-orange-400">developer berpengalaman</span> yang memiliki keahlian dalam berbagai bidang teknologi, mulai dari <span class="text-white font-medium">pengembangan web</span> hingga <span class="text-white font-medium">aplikasi mobile</span>. 
+                    Selama perjalanan karier saya, saya telah membangun berbagai <span class="text-orange-300 font-semibold">solusi digital</span> menggunakan teknologi modern, baik frontend maupun backend, untuk mendukung kebutuhan bisnis dan pengguna.
+                    <br><br>
+                    Selain itu, saya juga memiliki minat dan kompetensi di bidang <span class="text-orange-400 font-semibold">Internet of Things (IoT)</span>, di mana saya telah mengembangkan sistem pemantauan dan kontrol berbasis <span class="text-white">sensor</span>, <span class="text-white">mikrokontroler</span>, serta <span class="text-white">integrasi dengan platform cloud</span>.
+                    Kemampuan saya mencakup <span class="text-orange-300">pengembangan perangkat lunak</span>, integrasi sistem, dan <span class="text-white">otomasi berbasis data real-time</span>.
+                    <br><br>
+                    Dengan kombinasi keahlian ini, saya mampu merancang dan mengimplementasikan solusi yang <span class="italic text-orange-200">cerdas, efisien</span>, serta <span class="text-orange-300 font-semibold">berorientasi masa depan</span>.
+                </p>
+
+                <div class="flex flex-wrap">
+                    <span class="bg-gray-800 text-orange-500 px-2 py-1 rounded mr-2">HTML</span>
+                    <span class="bg-gray-800 text-orange-500 px-2 py-1 rounded mr-2">CSS</span>
+                    <span class="bg-gray-800 text-orange-500 px-2 py-1 rounded mr-2">JavaScript</span>
+                    <span class="bg-gray-800 text-orange-500 px-2 py-1 rounded mr-2">Flutter</span>
+                    <span class="bg-gray-800 text-orange-500 px-2 py-1 rounded mr-2">Firebase</span>
+                    <span class="bg-gray-800 text-orange-500 px-2 py-1 rounded mr-2">Arduino</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="py-20 px-30">
+        <h2 class="text-4xl mb-10 font-bold">
+            <span class="text-orange-500 mr-2">//</span> 
+            <span class="text-white border-b-2 border-orange-500 pb-1">Sertifikasi</span>
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div class="h-max bg-gray-800 p-4 rounded hover:shadow-lg transition">
+                <img src="../assets/Sertif PAL.png" alt="Sertifikasi 1" class="w-full h-3/4 mb-3 object-cover rounded">
+                <h3 class="font-bold">Sertifikasi Google</h3>
+                <p class="pb-5">Tanggal: Januari 2023</p>
+                <a href="#" class="mt-2 bg-orange-500 text-white px-2 py-1 rounded">Lihat Detail</a>
+            </div>
+            <div class="h-max bg-gray-800 p-4 rounded hover:shadow-lg transition">
+                <img src="../assets/Sertif HIMA.png" alt="Sertifikasi 1" class="w-full h-3/4 mb-3 object-cover rounded">
+                <h3 class="font-bold">Sertifikasi BISA AI</h3>
+                <p class="pb-5">Tanggal: Maret 2023</p>
+                <a href="#" class="mt-2 bg-orange-500 text-white px-2 py-1 rounded">Lihat Detail</a>
+            </div>
+            <div class="h-max bg-gray-800 p-4 rounded hover:shadow-lg transition">
+                <img src="../assets/Sertif SAMWIS.png" alt="Sertifikasi 1" class="w-full h-3/4 mb-3 object-cover rounded">
+                <h3 class="font-bold">Sertifikasi Coursera</h3>
+                <p class="pb-5">Tanggal: Mei 2023</p>
+                <a href="#" class="bg-orange-500 text-white px-2 py-1 rounded">Lihat Detail</a>
+            </div>
+            <div class="h-max bg-gray-800 p-4 rounded hover:shadow-lg transition">
+                <img src="../assets/Sertif CEO.png" alt="Sertifikasi 1" class="w-full h-3/4 mb-3 object-cover rounded">
+                <h3 class="font-bold">Sertifikasi Coursera</h3>
+                <p class="pb-5">Tanggal: Mei 2023</p>
+                <a href="#" class="bg-orange-500 text-white px-2 py-1 rounded">Lihat Detail</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 px-30 bg-gray-950">
+        <h2 class="text-4xl mb-10 font-bold">
+            <span class="text-orange-500 mr-2">//</span> 
+            <span class="text-white border-b-2 border-orange-500 pb-1">Proyek</span>
+        </h2>
+        <div class="grid grid-cols-3 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div class="w-full h-[30rem] bg-gray-900 p-4 rounded hover:shadow-lg transition">
+                <img src="../assets/App.png" alt="Proyek 1" class="w-full h-2/4 object-cover rounded">
+                <h3 class="font-bold mt-2">Aplikasi Monitoring dan Kontrol Hidroponik Sawi</h3>
+                <p>Deskripsi singkat tentang proyek ini.</p>
+                <div class="mt-2">
+                    <span class="bg-gray-700 text-orange-500 px-2 py-1 rounded mr-2">Flutter</span>
+                </div>
+                <div class="mt-5">
+                    <a href="https://www.figma.com/proto/R65EHZ7jAtppEysx16Gqwo/Mobile-App-TA-2024?node-id=147-183" class="bg-orange-500 text-white px-2 py-1 rounded">Live Demo</a>
+                    <a href="#" class="ml-2 bg-transparent border border-orange-500 text-orange-500 px-2 py-1 rounded">Lihat di GitHub</a>
+                </div>
+            </div>
+
+            <div class="w-full h-[30rem] bg-gray-900 p-4 rounded hover:shadow-lg transition">
+                <img src="../assets/Web Survei.png" alt="Proyek 1" class="w-full h-2/4 object-cover rounded">
+                <h3 class="font-bold mt-2">Website Survei Perusahaan</h3>
+                <p>Deskripsi singkat tentang proyek ini.</p>
+                <div class="mt-2">
+                    <span class="bg-gray-700 text-orange-500 px-2 py-1 rounded mr-2">HTML</span>
+                    <span class="bg-gray-700 text-orange-500 px-2 py-1 rounded mr-2">CSS</span>
+                    <span class="bg-gray-700 text-orange-500 px-2 py-1 rounded mr-2">Javascript</span>
+                </div>
+                <div class="mt-5">
+                    <a href="https://www.figma.com/proto/R65EHZ7jAtppEysx16Gqwo/Mobile-App-TA-2024?node-id=147-193" class="bg-orange-500 text-white px-2 py-1 rounded">Live Demo</a>
+                    <a href="#" class="ml-2 bg-transparent border border-orange-500 text-orange-500 px-2 py-1 rounded">Lihat di GitHub</a>
+                </div>
+            </div>
+
+            <div class="w-full h-[30rem] bg-gray-900 p-4 rounded hover:shadow-lg transition">
+                <img src="../assets/App.png" alt="Proyek 1" class="w-full h-2/4 object-cover rounded">
+                <h3 class="font-bold mt-2">Website Survei Perusahaan</h3>
+                <p>Deskripsi singkat tentang proyek ini.</p>
+                <div class="mt-2">
+                    <span class="bg-gray-700 text-orange-500 px-2 py-1 rounded mr-2">HTML</span>
+                    <span class="bg-gray-700 text-orange-500 px-2 py-1 rounded mr-2">CSS</span>
+                    <span class="bg-gray-700 text-orange-500 px-2 py-1 rounded mr-2">Javascript</span>
+                </div>
+                <div class="mt-5">
+                    <a href="https://www.figma.com/proto/R65EHZ7jAtppEysx16Gqwo/Mobile-App-TA-2024?node-id=147-183" class="bg-orange-500 text-white px-2 py-1 rounded">Live Demo</a>
+                    <a href="#" class="ml-2 bg-transparent border border-orange-500 text-orange-500 px-2 py-1 rounded">Lihat di GitHub</a>
+                </div>
+            </div>
+            
+            <div class="w-full h-[30rem] bg-gray-900 p-4 rounded hover:shadow-lg transition">
+                <img src="../assets/App.png" alt="Proyek 1" class="w-full h-2/4 object-cover rounded">
+                <h3 class="font-bold mt-2">Website Survei Perusahaan</h3>
+                <p>Deskripsi singkat tentang proyek ini.</p>
+                <div class="mt-2">
+                    <span class="bg-gray-700 text-orange-500 px-2 py-1 rounded mr-2">HTML</span>
+                    <span class="bg-gray-700 text-orange-500 px-2 py-1 rounded mr-2">CSS</span>
+                    <span class="bg-gray-700 text-orange-500 px-2 py-1 rounded mr-2">Javascript</span>
+                </div>
+                <div class="mt-5">
+                    <a href="https://www.figma.com/proto/R65EHZ7jAtppEysx16Gqwo/Mobile-App-TA-2024?node-id=147-183" class="bg-orange-500 text-white px-2 py-1 rounded">Live Demo</a>
+                    <a href="#" class="ml-2 bg-transparent border border-orange-500 text-orange-500 px-2 py-1 rounded">Lihat di GitHub</a>
+                </div>
+            </div>
+            
+            <div class="w-full h-[30rem] bg-gray-900 p-4 rounded hover:shadow-lg transition">
+                <img src="../assets/App.png" alt="Proyek 1" class="w-full h-2/4 object-cover rounded">
+                <h3 class="font-bold mt-2">Website Survei Perusahaan</h3>
+                <p>Deskripsi singkat tentang proyek ini.</p>
+                <div class="mt-2">
+                    <span class="bg-gray-700 text-orange-500 px-2 py-1 rounded mr-2">HTML</span>
+                    <span class="bg-gray-700 text-orange-500 px-2 py-1 rounded mr-2">CSS</span>
+                    <span class="bg-gray-700 text-orange-500 px-2 py-1 rounded mr-2">Javascript</span>
+                </div>
+                <div class="mt-5">
+                    <a href="https://www.figma.com/proto/R65EHZ7jAtppEysx16Gqwo/Mobile-App-TA-2024?node-id=147-183" class="bg-orange-500 text-white px-2 py-1 rounded">Live Demo</a>
+                    <a href="#" class="ml-2 bg-transparent border border-orange-500 text-orange-500 px-2 py-1 rounded">Lihat di GitHub</a>
+                </div>
+            </div>
+            <!-- Tambahkan proyek lainnya di sini -->
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <!-- <section id="contact" class="py-20 px-10">
+        <h2 class="text-4xl mb-10 font-bold">
+            <span class="text-orange-500 mr-2">//</span> 
+            <span class="text-white border-b-2 border-orange-500 pb-1">Kontak</span>
+        </h2>
+        <form class="bg-gray-800 p-6 rounded">
+            <input type="text" placeholder="Nama" class="w-full mb-4 p-2 rounded" required>
+            <input type="email" placeholder="Email" class="w-full mb-4 p-2 rounded" required>
+            <textarea placeholder="Pesan" class="w-full mb-4 p-2 rounded" required></textarea>
+            <button type="submit" class="bg-orange-500 text-white px-4 py-2 rounded">Kirim Pesan</button>
+        </form>
+        <div class="mt-6">
+            <h3 class="text-lg">Ikuti Saya:</h3>
+            <div class="flex space-x-4 mt-2">
+                <a href="#" class="hover:text-orange-500">LinkedIn</a>
+                <a href="#" class="hover:text-orange-500">GitHub</a>
+                <a href="#" class="hover:text-orange-500">Instagram</a>
+            </div>
+        </div>
+    </section> -->
+
+    <footer>
+        <h1 class="text-center font-bold">= MUHAMMAD HILMAN FAIRUZI =</h1>
+    </footer>
+</body>
+</html>
